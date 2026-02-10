@@ -18,7 +18,7 @@ export default function RootLayout({
       <body
         className={`${figtree.className} antialiased`}
       >
-        <main className="flex flex-col gap-5 md:gap-10 lg:gap-20 py-12 md:py-16 lg:py-23">
+        <main className="flex flex-col gap-30 gap-20 py-12 md:py-16 lg:py-23 transition-all duration-300 ease-in-out ">
           {children}
         </main>
       </body>

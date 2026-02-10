@@ -18,6 +18,17 @@
   --color-primary-foreground: hsl(var(--primary-foreground));
   --color-border: hsl(var(--border));
   --color-ring: hsl(var(--ring));
+  --background-image-brand-gradient: var(--brand-gradient);
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 :root {
@@ -30,6 +41,7 @@
   --radius: 0.5rem;
   --gray-600: #535862;
   --gray-900: #181D27;
+  --brand-gradient: linear-gradient(135deg, #f8f9fa 0%, #64d2ff 25%, #5e5ce6 50%, #ff2d55 75%, #ff9f0a 100%);
 }
 
 .dark {
@@ -60,4 +72,8 @@
   .section_container {
     @apply w-full max-w-160 md:max-w-236 lg:max-w-320 px-4 md:px-6 lg:px-8 mx-auto;
   }
+}
+
+.element {
+  animation: rotate 2s linear infinite;
 }
