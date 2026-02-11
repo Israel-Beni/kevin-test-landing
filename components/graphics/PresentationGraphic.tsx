@@ -12,7 +12,7 @@ interface PresentationGraphicProps {
 }
 
 export function PresentationGraphic({ className }: PresentationGraphicProps) {
-  const [currentHoverPosition, setCurrentHoverPosition] = useState(0);
+  const [currentHoverPosition, setCurrentHoverPosition] = useState(-1);
   const [isHovering, setIsHovering] = useState(false)
   return (
     <div className="w-full h-59 max-w-96 relative">
