@@ -91,6 +91,6 @@
 }
 
 .teams_svg__circle2 {
-  animation: anti-spin 20s linear infinite;
+  animation: spin 30s linear infinite;
   transform-origin: center;
 }
